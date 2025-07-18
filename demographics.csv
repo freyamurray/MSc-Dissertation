@@ -1,0 +1,76 @@
+﻿Participant,Column1,School_Grade,Age_subbed,Gender_ID,Had_covid,Knew_someone_covid,Drawing,Printed,Age
+1,Participant_1,P1,5,Girl,Yes,Yes,No,NA,5
+2,Participant_2,P1,5,Girl,Maybe,No,No,NA,NA
+3,Participant_3,P1,5,Girl,Don't know,No,Irrelevant,NA,NA
+4,Participant_4,P1,5,Girl,Yes,Yes,Yes,Yes,5
+5,Participant_5,P1,5,Boy,Yes,NA,Irrelevant,NA,NA
+6,Participant_6,P1,5,Boy,Yes,No,Irrelevant,NA,NA
+7,Participant_7,P1,5,Girl,Don't know,Don't know,Yes,Yes,NA
+8,Participant_8,P1,5,Girl,Yes,Yes,Irrelevant,NA,NA
+9,Participant_9,P1,5,Boy,Yes,Yes,Irrelevant,NA,NA
+10,Participant_10,P2,6,Boy,No,No,Irrelevant,NA,NA
+11,Participant_11,P2,6,Girl,No,No,No,NA,NA
+12,Participant_12,P2,6,Girl,No,No,Yes,Yes,NA
+13,Participant_13,P2,5,Girl,No,No,Yes,Yes,5+ ( a week before turning 6)
+14,Participant_14,P2,6,Girl,Don't know,Yes,Irrelevant,NA,6
+15,Participant_15,P2,6,Boy,No,Yes,Yes,Yes,6
+16,Participant_16,P2,6,Girl,Yes,No,Yes,Yes,6.5
+17,Participant_17,P2,6,Boy,No,Yes,No,NA,6
+18,Participant_18,P2,6,Girl,No,Yes,Irrelevant,NA,6
+19,Participant_19,P2,6,Boy,Don't know,No,Yes,Yes,6
+20,Participant_20,P3,7,Girl,No,Yes,Yes,Yes,7
+21,Participant_21,P2,6,Girl,Yes,No,Yes,Yes,6
+22,Participant_22,P3,7,Boy,Yes,Yes,Yes,Yes,almost 8
+23,Participant_23,P3,7,Girl,Yes,Yes,Yes,Yes,7
+24,Participant_24,P3,7,Girl,Maybe,No,Irrelevant,NA,7
+25,Participant_25,P3,7,Boy,No,Yes,Yes,Yes,7
+26,Participant_26,P3,7,Boy,Yes,Maybe,Yes,Yes,7
+27,Participant_27,P3,7,Girl,NA,NA,Yes,Yes,7
+28,Participant_28,P3,7,Boy,Yes,No,Yes,Yes,7
+29,Participant_29,P3,6,Girl,No,No,No,NA,Almost 7
+30,Participant_30,P3,7,Boy,Don't know,Maybe,Yes,Yes,7
+31,Participant_31,P3,7,Boy,Yes,No,Yes,Original,7
+32,Participant_32,P4,7,Girl,Yes,Yes,Yes,Yes,7 (almost 8)
+33,Participant_33,P4,8,Boy,No,Yes,Yes,Yes,8
+34,Participant_34,P4,7,Girl,Don't know,Yes,Yes,Yes,7
+35,Participant_35,P4,8,Girl,Yes,Yes,Yes,Yes,8
+36,Participant_36,P4,8,Girl,Yes,Yes,Yes,Yes,8
+37,Participant_37,P4,8,Boy,Don't know,No,Yes,Yes,8
+38,Participant_38,P4,8,Boy,Yes,Yes,Yes,Yes,8
+39,Participant_39,P5,8,Girl,Yes,Yes,Yes,Yes,8
+40,Participant_40,P5,9,Boy,Yes,Yes,Yes,Yes,9
+41,Participant_41,P5,9,Girl,No,Yes,Yes,Yes,9
+42,Participant_42,P5,9,Boy,Yes,Yes,Yes,Yes,9.5
+43,Participant_43,P5,9,Boy,Yes,Yes,Yes,Yes,9
+44,Participant_44,P5,9,Girl,No,No,Yes,Yes,9
+45,Participant_45,P5,9,Boy,Yes,Yes,Yes,Yes,9
+46,Participant_46,P5,9,Girl,Don't know,No,Yes,Yes,9
+47,Participant_47,P5,9,Boy,Yes,Yes,Yes,Yes,9
+48,Participant_48,P5,9,Boy,No,No,Yes,Yes,almost 10 (bday a few days later)
+49,Participant_49,P6,9,Other,Yes,Yes,Yes,Yes,almost 10 (bday a few days later)
+50,Participant_50,P6,10,Boy,Yes,Yes,Yes,Yes,10
+51,Participant_51,P6,10,Boy,Yes,Yes,Yes,Original,10
+52,Participant_52,P6,10,Boy,Yes,Yes,Yes,Yes,10
+53,Participant_53,P6,10,Girl,No,Yes,Yes,Yes,10
+54,Participant_54,P6,10,Boy,Yes,Yes,Yes,Yes,10
+55,Participant_55,P6,10,Boy,Yes,Yes,Yes,Yes,10
+56,Participant_56,P6,10,Boy,Yes,Yes,Yes,Yes,Almost 11 (bday at the end of the month)
+57,Participant_57,P7,11,Boy,Yes,Yes,Yes,Yes,11
+58,Participant_58,P7,11,Boy,No,Yes,Yes,Original,11
+59,Participant_59,P7,11,Girl,Yes,Yes,Yes,Yes,11
+60,Participant_60,P7,11,Girl,No,Yes,Yes,Yes,11
+61,Participant_61,P7,11,Girl,Yes,Yes,Yes,Yes,11
+62,Participant_62,P7,11,Girl,No,Yes,Yes,Yes,11
+63,Participant_63,P7,11,Girl,Yes,Yes,Yes,Original,11
+64,Participant_64,P7,11,Girl,Yes,Yes,Yes,Yes,11
+65,Participant_65,P7,11,Boy,No,Yes,Yes,Yes,11
+66,Participant_66,P7,11,Boy,Yes,Yes,Yes,Original,11
+67,Participant_67,P7,11,Girl,Yes,Yes,Yes,Original,11
+68,Participant_68,P7,11,Girl,Yes,Yes,Yes,Original,11
+69,Participant_69,P7,11,Girl,Yes,Yes,Yes,Original,11
+70,Participant_70,P7,11,Boy,Yes,Yes,Yes,Original,11
+71,Participant_71,P7,11,Girl,Yes,Yes,Yes,Original,11
+72,Participant_72,P7,11,Boy,Yes,Yes,Yes,Original,11
+73,Participant_73,P7,10,Girl,Yes,Yes,Yes,Yes,10
+74,Participant_74,P7,11,Boy,Yes,Yes,Yes,Original,11
+75,Participant_75,P6,10,Boy,Yes,Yes,Yes,Original,10

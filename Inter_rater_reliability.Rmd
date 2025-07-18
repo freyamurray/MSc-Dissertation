@@ -1,0 +1,127 @@
+---
+title: "Inter-rater reliability"
+author: "Freya Murray"
+date: "2025-05-30"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r, message=FALSE}
+# dependencies
+library(tidyverse)
+library(irr)
+```
+
+```{r, message=FALSE}
+# reading in raw data
+
+freya <- read_csv("Coding_All_Freya_3.csv") %>% na.omit()
+shuran <- read_csv("Coding_All_Shuran-3.csv") %>% na.omit()
+
+# na.omit() removed participants 1, 2, 11, 17 and 29 who did not provide drawings, n=70
+```
+
+```{r}
+# calculate inter-rater reliability for identity dimension
+identity <- tibble(freya$Identity, 
+                   shuran$Identity) %>% kappa2(weight = "equal")
+identity
+```
+
+```{r}
+# calculate inter-rater reliability for severity dimension
+severity <- tibble(freya$Severity, 
+                   shuran$Severity) %>% kappa2(weight = "equal")
+severity
+```
+
+```{r}
+# calculate inter-rater reliability for symptoms dimension
+symptoms <- tibble(freya$Symptoms, 
+                   shuran$Symptoms) %>% kappa2(weight = "equal")
+
+symptoms
+```
+
+```{r}
+# calculate inter-rater reliability for causes dimension
+causes <- tibble(freya$Causes, 
+                shuran$Causes) %>% kappa2(weight = "equal")
+causes
+```
+
+```{r}
+# calculate inter-rater reliability for prevention dimension
+prevention <- tibble(freya$Prevention,
+                   shuran$Prevention) %>% kappa2(weight = "equal")
+prevention
+```
+
+```{r}
+# calculate inter-rater reliability for timeline 1 dimension
+timeline_1 <- tibble(freya$Timeline_1, 
+                   shuran$Timeline_1) %>% kappa2(weight = "equal")
+timeline_1
+```
+
+```{r}
+# calculate inter-rater reliability for curability dimension
+curability <- tibble(freya$Curability, 
+                   shuran$Curability) %>% kappa2(weight = "equal")
+curability
+```
+
+```{r}
+# calculate inter-rater reliability for treatment dimension
+treatment <- tibble(freya$Treatment, 
+                   shuran$Treatment) %>% kappa2(weight = "equal")
+treatment
+```
+
+```{r}
+# calculate inter-rater reliability for timeline 2 dimension
+timeline_2 <- tibble(freya$Timeline_2, 
+                   shuran$Timeline_2) %>% kappa2(weight = "equal")
+timeline_2
+```
+
+```{r}
+# calculate mean kappa value across all dimensions
+total <- mean(c(identity$value, 
+                severity$value, 
+                symptoms$value, 
+                causes$value, 
+                prevention$value,
+                timeline_1$value,
+                curability$value,
+                treatment$value,
+                timeline_2$value))
+
+print(total)
+```
+```{r}
+freya_data_only <- freya %>% select(-Participant)
+shuran_data_only <- shuran %>% select(-Participant) 
+```
+
+```{r}
+freya_one_column <- freya %>% pivot_longer(2:10, names_to = "dimension")
+shuran_one_column <- shuran %>% pivot_longer(2:10, names_to = "dimension")
+
+freya_shuran_one_col <- tibble(freya_one_column$value, shuran_one_column$value)
+```
+
+```{r}
+kappa2(freya_shuran_one_col, weight = "equal")
+```
+
+
+```{r}
+total_agree <- agree(freya_shuran_one_col)
+print(total_agree)
+# 91.1% agreement!
+```
+
